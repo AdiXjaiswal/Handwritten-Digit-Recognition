@@ -17,6 +17,11 @@ A Handwritten Digit Recognition model using MNIST dataset.
 ## model.compile()
 - Defines the learning process before training begins.
 - It defines 3 main things:
-  - ** Optimizer: ** The optimizer controls how the neural network adjusts its weights to reduce errors.
-  - ** loss: ** Measures the difference between actual value and predicted value.
-  - ** Metrics: ** Help to see perfomance
+  - **Optimizer:** The optimizer controls how the neural network adjusts its weights to reduce errors.
+  - **loss:** Measures the difference between actual value and predicted value.
+  - **Metrics:** Help to see perfomance
+
+## model.fit()
+- It use to train the model
+- It returns the history object which contain list of dictionary with keys loss and accuracy.
+- 
