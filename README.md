@@ -35,3 +35,12 @@ A Handwritten Digit Recognition model using MNIST dataset.
     - **2:** A single summary line ater each epoch is finished.
     - **auto:** Automatically chooses the best mode based on your environment (usually it behave as 1).
   - **validation_split:** It separates a fixed set of samples once at the very beginning of the training process and uses that same set for evaluation at the end of every epoch. It's value floats between 0 and 1.
+
+## model.evaluate()
+- It used to evaluate a trained model on a given dataset.
+- It has following parameters:
+  - **x:** Input test data
+  - **y:** Target data
+  - **batch_size:** Number of samples per batch
+  - **verbose:** Controls how much information you see on your screen.
+  - **return_dict:** If True, returns a dictionary of metric values. Default value is False.
