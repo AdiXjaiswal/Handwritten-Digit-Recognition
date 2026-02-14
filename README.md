@@ -19,9 +19,19 @@ A Handwritten Digit Recognition model using MNIST dataset.
 - It defines 3 main things:
   - **Optimizer:** The optimizer controls how the neural network adjusts its weights to reduce errors.
   - **loss:** Measures the difference between actual value and predicted value.
-  - **Metrics:** Help to see perfomance
+  - **metrics=["accuracy"]:** It instructs the model to calculate this metric during training and testing. 
 
 ## model.fit()
-- It use to train the model
-- It returns the history object which contain list of dictionary with keys loss and accuracy.
-- 
+- It is use to train the model
+- If **metrics=["accuracy"]:** is given in model.compile(), then returns the history object which contain list of dictionary with keys loss and accuracy of training data, and val_loss and val_accuracy for validation data (if we specify validation_slit or validation_data).
+- It also have some parameters:
+  - **x:** Input training data
+  - **y:** Target labels
+  - **batch_size:** Defines the number of training samples processed by a model in a single iteration before updating its internal weights. It's default value is 32.
+  - **epochs:** An integer representing number of full pass over the entire training dataset.
+  - **verbose:** It controls how much information you see on your screen while model is training. It has 4 modes:
+    - **0:** Silent
+    - **1:** Progress bar for each epoch.
+    - **2:** A single summary line ater each epoch is finished.
+    - **auto:** Automatically chooses the best mode based on your environment (usually it behave as 1).
+  - **validation_split:** It separates a fixed set of samples once at the very beginning of the training process and uses that same set for evaluation at the end of every epoch. It's value floats between 0 and 1.
