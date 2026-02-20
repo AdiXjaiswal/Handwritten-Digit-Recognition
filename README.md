@@ -1,5 +1,21 @@
 # Handwritten-Digit-Recognition
 A Handwritten Digit Recognition model using MNIST dataset.
+- In this project I tested 4 different ANN (Artificial Neural Network) models build using Keras Sequntial API, with different parameters and activation function.
+- Below **table**shows the accuracy of all models with thier respective parameters and activation function.
+> Architecture format is number of nodes in: Input_layer - hidden_layer_1 - hidden_layer_2 - output_layer
+  
+| Model | Architecture | Activation | Training Accuracy | validation Accuracy |
+| --- | --- | --- | --- | --- |
+| Model 1| 784-16-16-10 | Sigmoid | 96.35 | 94.79 |
+| Model 2 | 784-16-16-10 | ReLu | 96.79 | 95.14 |
+| Model 3 | 784-64-64-10 | Sigmoid | 99.84 | 97.29 |
+| Model 4 | 784-64-64-10 | ReLu | 99.65 | 97.47 |
+
+- Below are the graphs showcasing the accuracy of training, validation and testing per epoch of all 4 models and a confusion matrix for best model (model 4)
+
+![Contains 4 graphs first 3 showing training, validation and testing accuracy and last graph is a confusion matrix of Model 4](https://www.kaggleusercontent.com/kf/297807991/eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2In0..ioulYRb2zkVBj4TcVmURnQ.kNEmcMl_yisJeT9Jj1VKZgsTR53GRHYy6B7xvFDVJlLdOlQ89WJPYHSe5MVHy-YYdEBIG5wYr4ZFJoIUlw4j03KnS6CHiGRRpMEC81AHJTyROKEt1vkoQahDOD3zlZAjlbgcKWzUv3GUBQ66c5riSf9rGODXluPjRnqR1zea50xVdYf5bjkZSk3_lk_AJBDp-x4T7QKPYTSjrrV83ukyCG-tufxt1sPUOYX6qomf8s0-Tq_t2dlMmVEMnj0UI9xLwSru5hvd6_bj5W5THVxWpgswi8QQTM9BipiBXEGRfPhCSMMooLr3YZXMfmhwFCAgdU0IYc0N310WZGUacjQa4uyzrr0rgaUnm8-ElFD5_yt0vPCIZMZfmKiaul_YjaCkfJbWvkEtpDDDwpCEKXmmFTaNbEC32xyF3aJ5g78rNmVVuVG2LM8HIW7WeBBcWCUNDKe16yJbD4p3cRx81M44Q2kJZOynJ6sEGnI_VvKeOFBL6DbByA0p-5PQQXqUFlZvK3SFXsLsSL9D42tXg4RrNI-lYzK0k_fbN1WwtudfR2xDFiQWsBJ4A7FitSmfIa0nTIzjPNHFJVHp8ye6nTu_LAOm659568CouGPoapvrg41lWT9AwucBaAyAFo3w5HAAfOuWdL2K9pHOr4IulTZdmQ.zgvw68grj2ieKc7VGOz3qQ/__results___files/__results___23_1.png)
+
+> Below are some concept I use in this project
 
 ## Sequnetial model
 - the simplest type of model, allowing you to build a neural network by stacking layers in a linear fashion.
